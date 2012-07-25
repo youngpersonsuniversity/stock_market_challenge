@@ -2,6 +2,36 @@
 @import "normalize";
 // @include "bourbon";
 
+@font-face {
+  font-family: 'IcoMoon';
+  src: url('../fonts/IcoMoon.eot');
+  src: url('../fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IcoMoon.svg#IcoMoon') format('svg'),
+    url('../fonts/IcoMoon.woff') format('woff'),
+    url('../fonts/IcoMoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.glyph {
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+  font-size: 60px;
+  line-height: 50px;
+  text-shadow: 0px 0px 3px #65A884;
+  font-weight: normal;
+  .fs1 {
+    display: inline;
+  }
+}
+
+// [data-icon]:before {
+//   font-family: 'IcoMoon';
+//   content: attr(data-icon);
+//   speak: none;
+// }
+
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +47,7 @@ body {
   display: block;
   width: 960px;
   height: 600px;
-  text-shadow: 0px 0px 3px #71BB90;
+  text-shadow: 0px 0px 6px #71BB90;
   font-size: 30px;
   line-height: 30px;
   ::selection {
@@ -42,13 +72,14 @@ body {
 }
 
 a {
-  background-color: #4FFF74;
-  padding: 4px 12px;
+  border: 2px solid #4FFF74;
+  // background-color: #4FFF74;
+  padding: 10px 20px;
   text-decoration: none;
-  color: #000;
+  color: #4FFF74;
   position: absolute;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 44px;
 }
 
 h2 {
@@ -69,6 +100,10 @@ li {
   font-size: 25px;
   margin-top: 30px;
   list-style-type: square;
+
+  -moz-box-shadow:    0 0 2px 1px #71BB90;
+  -webkit-box-shadow: 0 0 2px 1px #71BB90;
+  box-shadow:         0 0 2px 1px #71BB90;
 }
 
 #next {
@@ -83,7 +118,17 @@ span.info {
   display: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 ul.info li {
-  color: #EEE;
-  text-shadow: 0px 0px 2px #DDD;
+  margin: 0;
+  padding: 0;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+  background: #4FFF74;
+  color: #111;
+  text-shadow: 0px 0px 2px #284234;
 }
