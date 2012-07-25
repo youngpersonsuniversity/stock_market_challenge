@@ -1,6 +1,6 @@
 jQuery ->
   $('.type').typewrite
-    delay: 80
+    delay: 60
     extra_char: '_'
     callback: ->
       $('#next').blink
