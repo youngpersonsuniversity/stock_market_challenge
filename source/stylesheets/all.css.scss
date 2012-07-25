@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import "normalize";
+// @include "bourbon";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  font-weight: bold;
+  font-family: "larabiefont", courier, mono;
+  // font-family: courier;
+  background: black image-url("bg.jpg");
+  color: #4FFF74;
+  overflow: hidden;
+  display: block;
+  width: 960px;
+  height: 600px;
+  text-shadow: 0px 0px 3px #71BB90;
+  font-size: 30px;
+  line-height: 30px;
+  ::selection {
+  background: #4FFF74; /* Safari */
+  color: #111;
+  text-shadow: none;
+
+  }
+::-moz-selection {
+  background: #4FFF74; /* Firefox */
+  color: #111;
+  text-shadow: none;
+}
+  position: relative;
+  .inner {
+    // position: relative;
+    width: 870px;
+    // height: 500px;
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+a {
+  background-color: #4FFF74;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #000;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul {
+  //   margin: 0;
+  // padding: 0;
+}
+li {
+  display: none;
+  // list-style: none;
+  font-size: 25px;
+  margin-top: 30px;
+  list-style-type: square;
+}
+
+#next {
+  display: none;
+}
+
+span.info {
+  color: pink;
+}
+
+.type {
+  display: none;
+}
+
+ul.info li {
+  color: #EEE;
+  text-shadow: 0px 0px 2px #DDD;
+}
